@@ -1,0 +1,34 @@
+Revision ...78645c90c52db49daf7e0c85095b87394deb7c59 committed by Matt Demanett <mdemanett@gilt.com> on 2009-07-15 20:21:43
+
+    Merge branch 'dev' of mdemanett@scms.gilt.com:/home/git/gilt into dev
+Revision ...1b077ee6a27e141d980962f1b51996a988e83060 committed by Matt Demanett <mdemanett@gilt.com> on 2009-07-15 20:21:29
+
+    Merge branch 'b20090717' into dev
+    Conflicts:
+    app/models/sku.rb
+Revision ...cafb9559c0eba763ba0d94583522487e88ca7fa1 committed by Matt Demanett <mdemanett@gilt.com> on 2009-07-15 20:15:09
+
+    Merge branch 'b20090710' into b20090717
+Revision ...09901936111b3677062a40813e68a53011fec99c committed by Matt Demanett <mdemanett@gilt.com> on 2009-07-15 20:14:32
+
+    Fix recomputation of payments after unship.
+
+ app/models/order.rb                 |    5 +----
+ spec/models/order_processor_spec.rb |    6 ++++++
+ 2 files changed, 7 insertions(+), 4 deletions(-)
+Revision ...390c869ce3f5f1001ab45da2645f1417fa704c2d committed by Eric Lorenzo <elorenzo@gilt.com> on 2009-07-15 20:03:42
+
+    Story 587: Mark Quiet PO 'sent to warehouse' separately from existing process
+
+ app/models/warehouse/quiet_logistics.rb |    2 ++
+ 1 files changed, 2 insertions(+), 0 deletions(-)
+Revision ...64ac4bad7485b446a8ef5325de93bac73e5afac2 committed by Josh Knowles <jknowles@gilt.com> on 2009-07-15 18:37:10
+
+    Display default ship time for all items in cart
+
+ app/models/sku.rb                        |   86 +++++++++++++++---------------
+ app/views/default/ejs/cart/show.html.erb |   11 ++---
+ public/javascripts/cart.js               |    5 ++
+ public/stylesheets/default.css           |    2 +-
+ spec/models/sku_spec.rb                  |   65 ++++++++++++++++++++++
+ 5 files changed, 118 insertions(+), 51 deletions(-)

@@ -10,13 +10,29 @@ require 'build_factory'
 ActionMailer::Base.delivery_method = :test
 ActionMailer::Base.perform_deliveries = true
 
+def red_build_log
+  File.open(RAILS_ROOT + "/test/files/red_build.log").read
+end
+
+def previous_red_build_log
+  File.open(RAILS_ROOT + "/test/files/previous_red_build.log").read
+end
+
+def green_build_log
+  File.open(RAILS_ROOT + "/test/files/green_build.log").read
+end
+
+def changeset_log
+  File.open(RAILS_ROOT + "/test/files/changeset.log").read
+end
+
 class Test::Unit::TestCase
-  
+
   def assert_raises(arg1 = nil, arg2 = nil)
     expected_error = arg1.is_a?(Exception) ? arg1 : nil
     expected_class = arg1.is_a?(Class) ? arg1 : nil
     expected_message = arg1.is_a?(String) ? arg1 : arg2
-    begin 
+    begin
       yield
       fail "expected error was not raised"
     rescue Test::Unit::AssertionFailedError
@@ -29,11 +45,11 @@ class Test::Unit::TestCase
       assert_match(expected_message, e.message, "Unexpected error message") if expected_message.is_a? Regexp
     end
   end
-  
+
   def assert_false(expression)
     assert_equal false, expression
   end
-  
+
   def in_total_sandbox(&block)
     in_sandbox do |sandbox|
       @dir = File.expand_path(sandbox.root)
@@ -43,18 +59,18 @@ class Test::Unit::TestCase
       yield(sandbox)
     end
   end
-  
+
   def with_sandbox_project(&block)
     in_total_sandbox do |sandbox|
       FileUtils.mkdir_p("#{sandbox.root}/work/.svn")
-      
+
       project = Project.new('my_project')
       project.path = sandbox.root
-      
+
       yield(sandbox, project)
     end
   end
-  
+
   def create_project_stub(name, last_complete_build_status = 'failed', last_five_builds = [])
     project = Object.new
     project.stubs(:name).returns(name)
@@ -64,15 +80,15 @@ class Test::Unit::TestCase
     project.stubs(:last_build).returns(last_five_builds.last)
     project.stubs(:builder_error_message).returns('')
     project.stubs(:to_param).returns(name)
-    
+
     project.stubs(:last_complete_build).returns(nil)
     last_five_builds.reverse.each do |build|
       project.stubs(:last_complete_build).returns(build) unless build.incomplete?
     end
-    
+
     project
   end
-  
+
   def create_build_stub(label, status, time = Time.at(0))
     build = Object.new
     build.stubs(:label).returns(label)
@@ -83,10 +99,10 @@ class Test::Unit::TestCase
     build.stubs(:incomplete?).returns(status == 'incomplete')
     build.stubs(:changeset).returns("bobby checked something in")
     build.stubs(:brief_error).returns(nil)
-    
+
     build
   end
-  
+
 end
 
 class FakeSourceControl < SourceControl::AbstractAdapter

@@ -1,0 +1,782 @@
+/home/web/.cruise/projects/gilt/work $ bin/build_test_app.sh
+(in /home/web/.cruise/projects/gilt/work)
+Failed to load Metric Fu: no such file to load -- metric_fu - but don't worry, it's just for static analysis, which you probably aren't interested in (yet).
+Loading gilt_test schema...
+Loading gilt_test seed data...
+(in /home/web/.cruise/projects/gilt/work)
+Failed to load Metric Fu: no such file to load -- metric_fu - but don't worry, it's just for static analysis, which you probably aren't interested in (yet).
+Gilt Groupe Schema Upgrader
+---------------------------
+    Hostname: devcc1
+   Rails Env: test
+          DB: gilt_test (User: www Host: localhost, PORT: 5432)
+ MIN Version: 13617
+    GIT User: 
+---------------------------
+Skipping file: default/13121.sql -- already loaded
+Skipping file: default/13130.sql -- already loaded
+Skipping file: default/13131.sql -- already loaded
+Skipping file: default/13145.sql -- already loaded
+Skipping file: default/13147.sql -- already loaded
+Skipping file: default/13152.sql -- already loaded
+Skipping file: default/13153.rb -- already loaded
+Skipping file: default/13155.sql -- already loaded
+Skipping file: default/13156.sql -- already loaded
+Skipping file: default/13160.sql -- already loaded
+Skipping file: default/13161.sql -- already loaded
+Skipping file: default/13164.sql -- already loaded
+Skipping file: default/13166.sql -- already loaded
+Skipping file: default/13167.sql -- already loaded
+Skipping file: default/13170.sql -- already loaded
+Skipping file: default/13171.sql -- already loaded
+Skipping file: default/13172.sql -- already loaded
+Skipping file: default/13174.sql -- already loaded
+Skipping file: default/13179.sql -- already loaded
+Skipping file: default/13182.sql -- already loaded
+Skipping file: default/13183.sql -- already loaded
+Skipping file: default/13184.sql -- already loaded
+Skipping file: default/13186.sql -- already loaded
+Skipping file: default/13187.sql -- already loaded
+Skipping file: default/13188.sql -- already loaded
+Skipping file: default/13189.sql -- already loaded
+Skipping file: default/13190.sql -- already loaded
+Skipping file: default/13191.sql -- already loaded
+Skipping file: default/13192.sql -- already loaded
+Skipping file: default/13193.sql -- already loaded
+Skipping file: default/13195.sql -- already loaded
+Skipping file: default/13196.sql -- already loaded
+Skipping file: default/13198.sql -- already loaded
+Skipping file: default/13200.sql -- already loaded
+Skipping file: default/13203.sql -- already loaded
+Skipping file: default/13204.sql -- already loaded
+Skipping file: default/13206.sql -- already loaded
+Skipping file: default/13208.sql -- already loaded
+Skipping file: default/13209.sql -- already loaded
+Skipping file: default/13210.sql -- already loaded
+Skipping file: default/13211.sql -- already loaded
+Skipping file: default/13212.sql -- already loaded
+Skipping file: default/13213.sql -- already loaded
+Skipping file: default/13215.sql -- already loaded
+Skipping file: default/13216.sql -- already loaded
+Skipping file: default/13217.sql -- already loaded
+Skipping file: default/13218.sql -- already loaded
+Skipping file: default/13220.rb -- already loaded
+Skipping file: default/13221.sql -- already loaded
+Skipping file: default/13222.sql -- already loaded
+Skipping file: default/13224.sql -- already loaded
+Skipping file: default/13225.sql -- already loaded
+Skipping file: default/13226.sql -- already loaded
+Skipping file: default/13227.sql -- already loaded
+Skipping file: default/13230.sql -- already loaded
+Skipping file: default/13231.sql -- already loaded
+Skipping file: default/13232.sql -- already loaded
+Skipping file: default/13233.sql -- already loaded
+Skipping file: default/13234.sql -- already loaded
+Skipping file: default/13235.sql -- already loaded
+Skipping file: default/13239.sql -- already loaded
+Skipping file: default/13240.sql -- already loaded
+Skipping file: default/13242.sql -- already loaded
+Skipping file: default/13244.sql -- already loaded
+Skipping file: default/13248.sql -- already loaded
+Skipping file: default/13249.sql -- already loaded
+Skipping file: default/13251.sql -- already loaded
+Skipping file: default/13252.sql -- already loaded
+Skipping file: default/13254.sql -- already loaded
+Skipping file: default/13255.sql -- already loaded
+Skipping file: default/13256.sql -- already loaded
+Skipping file: default/13257.sql -- already loaded
+Skipping file: default/13258.sql -- already loaded
+Skipping file: default/13259.sql -- already loaded
+Skipping file: default/13260.sql -- already loaded
+Skipping file: default/13261.sql -- already loaded
+Skipping file: default/13262.sql -- already loaded
+Skipping file: default/13263.sql -- already loaded
+Skipping file: default/13264.sql -- already loaded
+Skipping file: default/13265.sql -- already loaded
+Skipping file: default/13266.sql -- already loaded
+Skipping file: default/13267.sql -- already loaded
+Skipping file: default/13268.sql -- already loaded
+Skipping file: default/13269.sql -- already loaded
+Skipping file: default/13270.sql -- already loaded
+Skipping file: default/13271.sql -- already loaded
+Skipping file: default/13274.sql -- already loaded
+Skipping file: default/13275.sql -- already loaded
+Skipping file: default/13276.sql -- already loaded
+Skipping file: default/13277.sql -- already loaded
+Skipping file: default/13278.sql -- already loaded
+Skipping file: default/13279.sql -- already loaded
+Skipping file: default/13280.sql -- already loaded
+Skipping file: default/13281.sql -- already loaded
+Skipping file: default/13282.sql -- already loaded
+Skipping file: default/13283.sql -- already loaded
+Skipping file: default/13284.sql -- already loaded
+Skipping file: default/13285.sql -- already loaded
+Skipping file: default/13286.sql -- already loaded
+Skipping file: default/13287.sql -- already loaded
+Skipping file: default/13288.sql -- already loaded
+Skipping file: default/13290.sql -- already loaded
+Skipping file: default/13291.sql -- already loaded
+Skipping file: default/13293.sql -- already loaded
+Skipping file: default/13295.sql -- already loaded
+Skipping file: default/13296.sql -- already loaded
+Skipping file: default/13297.sql -- already loaded
+Skipping file: default/13299.sql -- already loaded
+Skipping file: default/13300.sql -- already loaded
+Skipping file: default/13301.sql -- already loaded
+Skipping file: default/13302.sql -- already loaded
+Skipping file: default/13303.sql -- already loaded
+Skipping file: default/13304.sql -- already loaded
+Skipping file: default/13306.sql -- already loaded
+Skipping file: default/13307.sql -- already loaded
+Skipping file: default/13308.sql -- already loaded
+Skipping file: default/13309.sql -- already loaded
+Skipping file: default/13310.sql -- already loaded
+Skipping file: default/13311.sql -- already loaded
+Skipping file: default/13312.sql -- already loaded
+Skipping file: default/13313.sql -- already loaded
+Skipping file: default/13314.sql -- already loaded
+Skipping file: default/13315.sql -- already loaded
+Skipping file: default/13316.sql -- already loaded
+Skipping file: default/13317.sql -- already loaded
+Skipping file: default/13318.sql -- already loaded
+Skipping file: default/13319.sql -- already loaded
+Skipping file: default/13320.sql -- already loaded
+Skipping file: default/13322.sql -- already loaded
+Skipping file: default/13323.sql -- already loaded
+Skipping file: us/13324.sql -- already loaded
+Skipping file: default/13325.sql -- already loaded
+Skipping file: us/13326.sql -- already loaded
+Skipping file: us/13328.sql -- already loaded
+Skipping file: default/13329.sql -- already loaded
+Skipping file: us/13330.sql -- already loaded
+Skipping file: default/13331.sql -- already loaded
+Skipping file: default/13332.sql -- already loaded
+Skipping file: default/13335.sql -- already loaded
+Skipping file: default/13336.sql -- already loaded
+Skipping file: default/13337.sql -- already loaded
+Skipping file: default/13338.sql -- already loaded
+Skipping file: default/13339.sql -- already loaded
+Skipping file: us/13341.sql -- already loaded
+Skipping file: default/13342.sql -- already loaded
+Skipping file: default/13343.sql -- already loaded
+Skipping file: default/13344.sql -- already loaded
+Skipping file: default/13345.sql -- already loaded
+Skipping file: default/13346.sql -- already loaded
+Skipping file: default/13347.sql -- already loaded
+Skipping file: default/13349.sql -- already loaded
+Skipping file: us/13350.sql -- already loaded
+Skipping file: default/13351.sql -- already loaded
+Skipping file: default/13352.sql -- already loaded
+Skipping file: default/13353.sql -- already loaded
+Skipping file: us/13354.sql -- already loaded
+Skipping file: default/13355.sql -- already loaded
+Skipping file: default/13356.sql -- already loaded
+Skipping file: default/13359.sql -- already loaded
+Skipping file: default/13360.sql -- already loaded
+Skipping file: default/13361.sql -- already loaded
+Skipping file: default/13362.sql -- already loaded
+Skipping file: default/13363.sql -- already loaded
+Skipping file: default/13364.sql -- already loaded
+Skipping file: us/13366.rb -- already loaded
+Skipping file: us/13368.rb -- already loaded
+Skipping file: default/13369.sql -- already loaded
+Skipping file: default/13370.sql -- already loaded
+Skipping file: default/13371.sql -- already loaded
+Skipping file: default/13372.sql -- already loaded
+Skipping file: default/13373.sql -- already loaded
+Skipping file: default/13374.sql -- already loaded
+Skipping file: default/13375.sql -- already loaded
+Skipping file: default/13376.sql -- already loaded
+Skipping file: default/13377.sql -- already loaded
+Skipping file: default/13379.sql -- already loaded
+Skipping file: default/13380.sql -- already loaded
+Skipping file: default/13381.sql -- already loaded
+Skipping file: default/13382.sql -- already loaded
+Skipping file: default/13383.sql -- already loaded
+Skipping file: default/13384.sql -- already loaded
+Skipping file: us/13386.sql -- already loaded
+Skipping file: default/13387.sql -- already loaded
+Skipping file: default/13388.sql -- already loaded
+Skipping file: default/13389.sql -- already loaded
+Skipping file: default/13390.sql -- already loaded
+Skipping file: default/13391.sql -- already loaded
+Skipping file: default/13392.sql -- already loaded
+Skipping file: default/13393.sql -- already loaded
+Skipping file: default/13396.sql -- already loaded
+Skipping file: default/13397.sql -- already loaded
+Skipping file: us/13398.sql -- already loaded
+Skipping file: default/13399.sql -- already loaded
+Skipping file: default/13400.sql -- already loaded
+Skipping file: default/13401.sql -- already loaded
+Skipping file: default/13402.sql -- already loaded
+Skipping file: default/13403.sql -- already loaded
+Skipping file: default/13405.sql -- already loaded
+Skipping file: default/13406.sql -- already loaded
+Skipping file: us/13407.sql -- already loaded
+Skipping file: default/13408.sql -- already loaded
+Skipping file: default/13409.sql -- already loaded
+Skipping file: us/13410.sql -- already loaded
+Skipping file: us/13411.sql -- already loaded
+Skipping file: default/13412.sql -- already loaded
+Skipping file: us/13413.sql -- already loaded
+Skipping file: default/13414.sql -- already loaded
+Skipping file: default/13415.sql -- already loaded
+Skipping file: default/13416.sql -- already loaded
+Skipping file: default/13417.sql -- already loaded
+Skipping file: default/13418.sql -- already loaded
+Skipping file: default/13419.sql -- already loaded
+Skipping file: default/13420.sql -- already loaded
+Skipping file: default/13421.sql -- already loaded
+Skipping file: default/13422.sql -- already loaded
+Skipping file: default/13423.sql -- already loaded
+Skipping file: default/13424.sql -- already loaded
+Skipping file: default/13425.sql -- already loaded
+Skipping file: default/13426.sql -- already loaded
+Skipping file: default/13428.sql -- already loaded
+Skipping file: default/13429.sql -- already loaded
+Skipping file: default/13432.sql -- already loaded
+Skipping file: default/13433.sql -- already loaded
+Skipping file: default/13434.sql -- already loaded
+Skipping file: default/13435.sql -- already loaded
+Skipping file: default/13436.sql -- already loaded
+Skipping file: default/13437.sql -- already loaded
+Skipping file: default/13438.sql -- already loaded
+Skipping file: default/13439.sql -- already loaded
+Skipping file: default/13440.sql -- already loaded
+Skipping file: default/13441.sql -- already loaded
+Skipping file: default/13443.sql -- already loaded
+Skipping file: default/13444.sql -- already loaded
+Skipping file: default/13446.sql -- already loaded
+Skipping file: default/13447.sql -- already loaded
+Skipping file: default/13448.sql -- already loaded
+Skipping file: default/13449.sql -- already loaded
+Skipping file: default/13450.sql -- already loaded
+Skipping file: default/13453.sql -- already loaded
+Skipping file: default/13454.sql -- already loaded
+Skipping file: us/13455.sql -- already loaded
+Skipping file: default/13456.sql -- already loaded
+Skipping file: default/13457.sql -- already loaded
+Skipping file: default/13461.sql -- already loaded
+Skipping file: us/13462.sql -- already loaded
+Skipping file: default/13463.sql -- already loaded
+Skipping file: default/13466.sql -- already loaded
+Skipping file: default/13468.sql -- already loaded
+Skipping file: default/13470.sql -- already loaded
+Skipping file: us/13475.sql -- already loaded
+Skipping file: default/13478.sql -- already loaded
+Skipping file: default/13479.sql -- already loaded
+Skipping file: default/13480.sql -- already loaded
+Skipping file: default/13482.sql -- already loaded
+Skipping file: default/13489.sql -- already loaded
+Skipping file: default/13490.sql -- already loaded
+Skipping file: default/13491.sql -- already loaded
+Skipping file: default/13493.sql -- already loaded
+Skipping file: default/13494.sql -- already loaded
+Skipping file: default/13495.sql -- already loaded
+Skipping file: default/13496.sql -- already loaded
+Skipping file: default/13507.sql -- already loaded
+Skipping file: default/13508.sql -- already loaded
+Skipping file: default/13509.sql -- already loaded
+Skipping file: default/13510.sql -- already loaded
+Skipping file: default/13511.sql -- already loaded
+Skipping file: default/13512.sql -- already loaded
+Skipping file: default/13513.sql -- already loaded
+Skipping file: default/13514.sql -- already loaded
+Skipping file: default/13516.sql -- already loaded
+Skipping file: us/13517.sql -- already loaded
+Skipping file: default/13518.sql -- already loaded
+Skipping file: default/13520.sql -- already loaded
+Skipping file: default/13521.sql -- already loaded
+Skipping file: default/13523.sql -- already loaded
+Skipping file: default/13524.rb -- already loaded
+Skipping file: default/13525.sql -- already loaded
+Skipping file: default/13526.sql -- already loaded
+Skipping file: default/13527.sql -- already loaded
+Skipping file: default/13528.sql -- already loaded
+Skipping file: default/13529.sql -- already loaded
+Skipping file: default/13530.sql -- already loaded
+Skipping file: default/13531.sql -- already loaded
+Skipping file: us/13532.sql -- already loaded
+Skipping file: default/13535.sql -- already loaded
+Skipping file: default/13536.sql -- already loaded
+Skipping file: default/13537.sql -- already loaded
+Skipping file: default/13538.sql -- already loaded
+Skipping file: us/13539.sql -- already loaded
+Skipping file: default/13540.sql -- already loaded
+Skipping file: default/13541.sql -- already loaded
+Skipping file: default/13545.sql -- already loaded
+Skipping file: default/13548.sql -- already loaded
+Skipping file: default/13549.sql -- already loaded
+Skipping file: default/13550.sql -- already loaded
+Skipping file: default/13551.sql -- already loaded
+Skipping file: default/13552.sql -- already loaded
+Skipping file: default/13553.sql -- already loaded
+Skipping file: default/13555.sql -- already loaded
+Skipping file: default/13557.sql -- already loaded
+Skipping file: default/13560.sql -- already loaded
+Skipping file: default/13563.sql -- already loaded
+Skipping file: default/13565.sql -- already loaded
+Skipping file: us/13567.sql -- already loaded
+Skipping file: default/13570.sql -- already loaded
+Skipping file: default/13572.sql -- already loaded
+Skipping file: default/13573.sql -- already loaded
+Skipping file: us/13574.sql -- already loaded
+Skipping file: default/13575.sql -- already loaded
+Skipping file: default/13576.sql -- already loaded
+Skipping file: default/13578.sql -- already loaded
+Skipping file: default/13580.sql -- already loaded
+Skipping file: default/13581.sql -- already loaded
+Skipping file: us/13585.sql -- already loaded
+Skipping file: default/13586.sql -- already loaded
+Skipping file: default/13590.sql -- already loaded
+Skipping file: default/13591.sql -- already loaded
+Skipping file: default/13593.sql -- already loaded
+Skipping file: us/13594.sql -- already loaded
+Skipping file: us/13595.sql -- already loaded
+Skipping file: default/13597.sql -- already loaded
+Skipping file: us/13598.sql -- already loaded
+Skipping file: default/13599.sql -- already loaded
+Skipping file: default/13600.sql -- already loaded
+Skipping file: default/13601.sql -- already loaded
+Skipping file: default/13602.sql -- already loaded
+Skipping file: default/13603.sql -- already loaded
+Skipping file: us/13604.sql -- already loaded
+Skipping file: default/13605.sql -- already loaded
+Skipping file: default/13606.sql -- already loaded
+Skipping file: default/13607.sql -- already loaded
+Skipping file: default/13608.sql -- already loaded
+Skipping file: default/13609.sql -- already loaded
+Skipping file: default/13610.rb -- already loaded
+Skipping file: default/13611.sql -- already loaded
+Skipping file: default/13613.sql -- already loa/home/web/.cruise/projects/gilt/work/app/models/sizing_chart.rb:7: warning: already initialized constant CHART_TYPES
+/home/web/.cruise/projects/gilt/work/app/models/country.rb:9: warning: already initialized constant JPN_ID
+/home/web/.cruise/projects/gilt/work/app/models/country.rb:10: warning: already initialized constant USA_ID
+/home/web/.cruise/projects/gilt/work/app/models/country.rb:13: warning: already initialized constant FASHIONABLE
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/web/.cruise/projects/gilt/work/app/controllers/bb_controller.rb:4)
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/web/.cruise/projects/gilt/work/app/controllers/blackbird_integration_controller.rb:5)
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/web/.cruise/projects/gilt/work/app/controllers/client_app_controller.rb:4)
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/web/.cruise/projects/gilt/work/app/controllers/client_app/windows_taskbar_controller.rb:3)
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/web/.cruise/projects/gilt/work/app/controllers/ejs_controller.rb:5)
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/web/.cruise/projects/gilt/work/app/controllers/image_ad_controller.rb:2)
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/web/.cruise/projects/gilt/work/app/controllers/inventory_service_controller.rb:5)
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/web/.cruise/projects/gilt/work/app/controllers/service/account_controller.rb:2)
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/web/.cruise/projects/gilt/work/app/controllers/service/blackbird_controller.rb:3)
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/web/.cruise/projects/gilt/work/app/controllers/service/sku_controller.rb:3)
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/web/.cruise/projects/gilt/work/app/controllers/sso_controller.rb:3)
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/web/.cruise/projects/gilt/work/app/controllers/system_controller.rb:2)
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/web/.cruise/projects/gilt/work/app/controllers/travel_controller.rb:4)
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/web/.cruise/projects/gilt/work/app/controllers/twilio_controller.rb:5)
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/web/.cruise/projects/gilt/work/app/controllers/u_controller.rb:10)
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/web/.cruise/projects/gilt/work/app/controllers/vip_controller.rb:2)
+ded
+Skipping file: default/13614.sql -- already loaded
+Skipping file: default/13616.sql -- already loaded
+Skipping file: default/13617.sql -- already loaded
+*** Loading us/13618.sql
+*** Loading default/13619.sql
+*** Loading default/13621.sql
+*** Loading us/13623.sql
+*** Loading us/13624.rb
+*** Loading default/13625.sql
+*** Loading /home/web/.cruise/projects/gilt/work/script/postgres/sanitize-dev-postupgrade.sql
+Up to date!
+Database upgrade succeeded at Wed Jul 15 19:16:45 UTC 2009.
+ProcessStatus memcached: already running.
+rm -r /home/web/.cruise/projects/gilt/build-be77c5e03641a9433faa7190a78aee145935ccc4/coverage
+(in /home/web/.cruise/projects/gilt/work)
+Failed to load Metric Fu: no such file to load -- metric_fu - but don't worry, it's just for static analysis, which you probably aren't interested in (yet).
+Example disabled: should check if hermes login
+Example disabled: should have a job that removes files that are 2 hours old
+Example disabled: let a user grab a unit from an order item with expired reservation
+Example disabled: not let a user grab a unit from an order item with unexpired reservation
+Example disabled: returns true iff there are unprocessed inventory txn objects in the table
+Example disabled: processes pending transactions and returns most recent transaction_id
+Example disabled: generates valid OrderMessage XML
+ProcessStatus memcached: already running.
+Profiling enabled.
+....UUID: No UUID state file found, attempting to create one for you:
+/home/web/.cruise/projects/gilt/work/vendor/rails/activesupport/lib/active_support/dependencies.rb:380: command not found: ipconfig /all
+Could not find any IEEE 802 NIC MAC addresses for this machine.
+You need to create the uuid.state file manually.
+UUID: Initialized UUID generator with random sequence number/MAC address.
+UUID: UUIDs are not guaranteed to be unique. Please create a uuid.state file as soon as possible.
+.................................................................................................................................................................................................................................................................................................................................................*...........................*........................................................................................................F..............................................F......................................................................................................................................................NOTICE:  table "users_first_order_migration" does not exist, skipping
+NOTICE:  ALTER TABLE / ADD PRIMARY KEY will create implicit index "users_first_order_migration_pkey" for table "users_first_order_migration"
+.......................................................................................................................................................................................................................................................................................................................................................................................................................................NOTICE:  table "email_bounce_user_ids_tmp" does not exist, skipping
+NOTICE:  table "email_bounce_user_ids_tmp" does not exist, skipping
+...........................................................................NOTICE:  table "users_first_order_migration" does not exist, skipping
+NOTICE:  ALTER TABLE / ADD PRIMARY KEY will create implicit index "users_first_order_migration_pkey" for table "users_first_order_migration"
+................................................................
+
+
+Top 10 slowest examples:
+5.7595460 OrderProcessor with drop-ship orders with shipping manifests can process a ship confirmation from the warehouse
+5.2210970 Order Testing order splits with cancellation an order with apparel, :jewelry, drop-ship apparel, cancels in parts
+4.6570650 CheckoutController#payment should set the shipping address properly on GET
+4.6510160 Order Testing order splits and subsequent edits an order with apparel and drop-ship apparel, free shipping discount, no account credit, after switch to next day and then back to ground, is correct
+4.1707010 Gl::Query.returns_unit_cost_changes_by_day with unit cost change requests for multiple divisions returns cost change
+4.1217570 Gl::Query.sales_by_day_by_payment_type includes a percentages for reconciled payments (total + each CC type)
+4.0495800 Order Two orders placed within an hour of each other with one on gilt and one on fuse should have a shipping charge only on the first
+3.9614300 Order Testing order splits with cancellation an order with apparel and drop-ship apparel, partial account credit more than first split, reallocates after cancel 2nd shipment
+3.9388240 Gl::Query.returns_unit_cost_changes_by_day with unit cost change requests for multiple divisions groups properly and reports only distinct request, respecting divisions
+3.6886590 Image sale image should crop to a sale feature image
+
+Pending:
+
+OrderItem.create! when explicitly excluding drop ship units (opts[:include_drop_ship_unit] => false) ??? (Not Yet Implemented)
+./spec/models/order_item_spec.rb:205
+
+UsPostalCode looks up state codes by postal codes (TODO)
+./spec/models/us_postal_code_spec.rb:4
+
+1)
+Order::PaymentDiscountImpossible in 'OrderProcessor with drop-ship orders releases a drop-ship order when all units received or unshipped'
+Could not find payments to reduce by 100.0 for order 1210471
+/home/web/.cruise/projects/gilt/work/app/models/order.rb:1894:in `do_reduce_payment_amount'
+/home/web/.cruise/projects/gilt/work/app/models/order.rb:1811:in `adjust_payment_amount'
+/home/web/.cruise/projects/gilt/work/app/models/order.rb:1795:in `update_order_for_unshippables'
+/home/web/.cruise/projects/gilt/work/app/models/order.rb:1779:in `update_order_for_unshippables'
+/home/web/.cruise/projects/gilt/work/app/models/order.rb:819:in `update_order_for_unshippables!'
+/home/web/.cruise/projects/gilt/work/app/models/order.rb:818:in `update_order_for_unshippables!'
+/home/web/.cruise/projects/gilt/work/app/models/order_unshipped_item.rb:15:in `after_save'
+./spec/models/order_processor_spec.rb:201:
+
+2)
+SomeError in 'Product foo'
+undefined local variable or method `bar' for #<Class:0xe499ba8>
+/home/web/.cruise/projects/gilt/work/app/models/wait_list_item_queue.rb:8:in `job_process_all'
+./spec/models/wait_list_item_queue_spec.rb:25:in `test_creation'
+
+Finished in 784.56942 seconds
+
+1234 examples, 2 failures, 2 pending
++----------------------------------------------------+-------+-------+--------+
+|                  File                              | Lines |  LOC  |  COV   |
++----------------------------------------------------+-------+-------+--------+
+|app/controllers/account_controller.rb               |   934 |   780 |  20.8% |
+|app/controllers/admin/discrepancy_controller.rb     |    41 |    32 | 100.0% |
+|app/controllers/admin/finance_controller.rb         |   507 |   409 |  13.9% |
+|...rollers/admin/merchant_transaction_controller.rb |    37 |    31 |  90.3% |
+|app/controllers/admin/packing_list_controller.rb    |   538 |   445 |  10.8% |
+|app/controllers/admin/payment_controller.rb         |   442 |   365 |  24.7% |
+|app/controllers/admin/return_controller.rb          |   558 |   464 |  35.1% |
+|app/controllers/admin/sale_controller.rb            |  1136 |   954 |  11.3% |
+|app/controllers/admin/unit_controller.rb            |    52 |    43 |  55.8% |
+|...rs/admin/unit_cost_change_requests_controller.rb |    81 |    70 |  54.3% |
+|app/controllers/admin_controller.rb                 |   104 |    87 |  28.7% |
+|app/controllers/application_controller.rb           |  1534 |  1174 |  40.7% |
+|app/controllers/checkout_controller.rb              |   753 |   591 |  17.1% |
+|app/controllers/home_controller.rb                  |   263 |   202 |  44.1% |
+|app/controllers/quiet_logistics_controller.rb       |    16 |    12 | 100.0% |
+|app/controllers/sale_controller.rb                  |   551 |   420 |  21.0% |
+|app/controllers/support_controller.rb               |   147 |   128 |  14.1% |
+|app/controllers/tech_controller.rb                  |    77 |    65 |  29.2% |
+|app/controllers/util_controller.rb                  |   163 |   126 |  19.0% |
+|app/controllers/wait_list_controller.rb             |   112 |    90 |  28.9% |
+|app/helpers/admin_helper.rb                         |    83 |    62 |  62.9% |
+|app/helpers/application_helper.rb                   |   750 |   563 |  44.6% |
+|app/helpers/name_helper.rb                          |    11 |    11 |  72.7% |
+|app/helpers/omniture_helper.rb                      |    23 |    21 | 100.0% |
+|app/helpers/sale_helper.rb                          |    16 |    14 | 100.0% |
+|app/metal/cart_server.rb                            |   140 |   117 |  15.4% |
+|app/metal/cms.rb                                    |   132 |    90 |  17.8% |
+|app/models/ab_test_group.rb                         |    37 |    29 |  34.5% |
+|app/models/account.rb                               |    32 |    26 |  92.3% |
+|app/models/account_credit.rb                        |   167 |   129 |  55.0% |
+|app/models/account_credit_payment.rb                |    20 |    15 | 100.0% |
+|app/models/account_credit_type.rb                   |    84 |    62 |  77.4% |
+|app/models/address.rb                               |   417 |   301 |  63.1% |
+|app/models/blog/blog_comment.rb                     |    52 |    38 |  36.8% |
+|app/models/blog/blog_post.rb                        |   117 |    90 |  46.7% |
+|app/models/brand.rb                                 |    90 |    64 |  65.6% |
+|app/models/bulk_list.rb                             |   222 |   167 |  54.5% |
+|app/models/category.rb                              |   172 |   133 |  45.1% |
+|app/models/color.rb                                 |     3 |     2 | 100.0% |
+|app/models/computed_global.rb                       |    25 |    21 |  81.0% |
+|app/models/constant.rb                              |    58 |    49 |  61.2% |
+|app/models/country.rb                               |    61 |    43 |  51.2% |
+|app/models/country_state.rb                         |    35 |    27 |  92.6% |
+|app/models/credit_card.rb                           |   243 |   178 |  84.3% |
+|app/models/credit_card_type.rb                      |    59 |    50 |  52.0% |
+|app/models/customer_datum.rb                        |   176 |   149 |  81.2% |
+|app/models/customer_unit.rb                         |    13 |     7 | 100.0% |
+|app/models/deferred_job.rb                          |    59 |    47 |  61.7% |
+|app/models/deferred_sql_report.rb                   |   149 |   116 |  74.1% |
+|app/models/deleted_payment.rb                       |    12 |    10 | 100.0% |
+|app/models/discount.rb                              |   139 |   107 |  46.7% |
+|app/models/discount_offer.rb                        |    54 |    44 |  81.8% |
+|app/models/discount_reason.rb                       |    50 |    34 |  82.4% |
+|app/models/division.rb                              |   104 |    80 |  70.0% |
+|app/models/dollar_off_discount.rb                   |    17 |    12 |  83.3% |
+|app/models/email_calendar_to_friend_message.rb      |    30 |    21 |  33.3% |
+|app/models/email_mailing.rb                         |   690 |   515 |  20.0% |
+|app/models/email_mailing_stats.rb                   |    64 |    47 |  10.6% |
+|app/models/email_message.rb                         |   651 |   541 |  66.2% |
+|app/models/email_post_to_friend_message.rb          |    31 |    25 |  32.0% |
+|app/models/email_to_friend_message.rb               |    46 |    39 |  28.2% |
+|app/models/email_type.rb                            |   340 |   259 |  24.7% |
+|app/models/email_verification.rb                    |    24 |    18 |  33.3% |
+|app/models/esp/bounce_code.rb                       |     7 |     5 | 100.0% |
+|app/models/esp/bounce_phase.rb                      |     7 |     5 | 100.0% |
+|app/models/esp/email_bounce.rb                      |    23 |    19 |  73.7% |
+|app/models/exchange.rb                              |    26 |    23 | 100.0% |
+|app/models/exchange_sku.rb                          |    44 |    37 | 100.0% |
+|app/models/external_site_promotion.rb               |   125 |    97 |  58.8% |
+|app/models/fiscal_month.rb                          |    52 |    44 |  65.9% |
+|app/models/fiscal_week.rb                           |    52 |    44 |  40.9% |
+|app/models/free_shipping_discount.rb                |    17 |    13 | 100.0% |
+|app/models/ftp_server.rb                            |   437 |   342 |  17.5% |
+|app/models/generic_email_message.rb                 |    31 |    24 |  87.5% |
+|app/models/gift_card.rb                             |    27 |    21 |  28.6% |
+|app/models/gl/common.rb                             |    55 |    38 |  52.6% |
+|app/models/gl/query.rb                              |   767 |   600 |  40.2% |
+|app/models/gl/sync.rb                               |    68 |    57 |  31.6% |
+|app/models/group.rb                                 |   309 |   237 |  61.6% |
+|app/models/group_member.rb                          |    33 |    25 |  84.0% |
+|app/models/handheld.rb                              |    25 |    20 |  55.0% |
+|app/models/home_page_option.rb                      |    21 |    17 |  64.7% |
+|app/models/home_page_promotion.rb                   |   152 |   125 |  58.4% |
+|app/models/home_page_recommendation.rb              |   224 |   185 |  34.1% |
+|app/models/image.rb                                 |   487 |   375 |  57.9% |
+|app/models/inter_warehouse_order.rb                 |    47 |    39 |  64.1% |
+|app/models/invitation.rb                            |   151 |   111 |  45.0% |
+|app/models/invitation_message.rb                    |   230 |   165 |  39.4% |
+|app/models/member_value.rb                          |   120 |    92 |  21.7% |
+|app/models/membership_request.rb                    |    74 |    61 |  88.5% |
+|app/models/merchant_bank.rb                         |   101 |    83 | 100.0% |
+|app/models/merchant_transaction.rb                  |    53 |    40 | 100.0% |
+|app/models/merchant_transaction_batch.rb            |    52 |    40 | 100.0% |
+|app/models/mobile_carrier.rb                        |    29 |    16 | 100.0% |
+|app/models/move_inventory_order.rb                  |    74 |    57 |  50.9% |
+|app/models/nfs_share.rb                             |    66 |    48 |  70.8% |
+|app/models/notifier.rb                              |   293 |   236 |  53.0% |
+|app/models/opt_out_email.rb                         |    63 |    41 |  31.7% |
+|app/models/order.rb                                 |  1936 |  1446 |  65.1% |
+|app/models/order_item.rb                            |   377 |   279 |  67.4% |
+|app/models/order_processor.rb                       |   746 |   541 |  52.1% |
+|app/models/order_shipment.rb                        |   214 |   175 |  24.6% |
+|app/models/order_unshipped_item.rb                  |    22 |    16 |  81.2% |
+|app/models/payment.rb                               |   418 |   322 |  61.5% |
+|app/models/payment_processor.rb                     |     8 |     4 | 100.0% |
+|app/models/payment_transaction_discrepancy.rb       |    47 |    35 | 100.0% |
+|app/models/personal_offer.rb                        |    65 |    51 |  35.3% |
+|app/models/photo_loader.rb                          |   329 |   257 |   6.6% |
+|app/models/photo_shoot_shot.rb                      |     8 |     5 | 100.0% |
+|app/models/preauthorized_account.rb                 |    52 |    42 |  26.2% |
+|app/models/private_sale.rb                          |    80 |    58 |  20.7% |
+|app/models/product.rb                               |   734 |   578 |  28.9% |
+|app/models/product_category.rb                      |   281 |   226 |  40.3% |
+|app/models/product_look.rb                          |   569 |   471 |  26.8% |
+|app/models/product_looks_is_sold_out.rb             |     7 |     4 | 100.0% |
+|app/models/product_looks_sales.rb                   |    31 |    27 |  59.3% |
+|app/models/promotion.rb                             |   363 |   291 |  36.4% |
+|app/models/promotion_response.rb                    |    23 |    20 | 100.0% |
+|app/models/purchase_order.rb                        |   816 |   657 |  36.1% |
+|app/models/purchase_order_shipment.rb               |    40 |    32 |  25.0% |
+|app/models/purchase_order_sku.rb                    |    30 |    23 |  91.3% |
+|app/models/referral.rb                              |   146 |   110 |  20.0% |
+|app/models/referral_type.rb                         |    25 |    20 |  35.0% |
+|app/models/report/unit_cost_adjustment.rb           |    77 |    69 | 100.0% |
+|app/models/return_policy.rb                         |    25 |    16 |  37.5% |
+|app/models/return_reason.rb                         |    38 |    28 |  67.9% |
+|app/models/return_refund_discount.rb                |     7 |     5 |  40.0% |
+|app/models/rf/customer.rb                           |   119 |    89 |  80.9% |
+|app/models/rma.rb                                   |   782 |   618 |  65.5% |
+|app/models/rma_applied_payment.rb                   |    30 |    19 |  21.1% |
+|app/models/rma_item.rb                              |    33 |    24 | 100.0% |
+|app/models/rma_order.rb                             |     6 |     4 | 100.0% |
+|app/models/rma_received_item.rb                     |   119 |    99 |  81.8% |
+|app/models/sale.rb                                  |  1628 |  1270 |  42.4% |
+|app/models/sale_cache.rb                            |    40 |    32 |  31.2% |
+|app/models/sale_image.rb                            |    41 |    26 |  84.6% |
+|app/models/sale_stat.rb                             |   393 |   296 |  55.4% |
+|app/models/sale_user_visit.rb                       |     2 |     2 | 100.0% |
+|app/models/sale_visit.rb                            |    10 |     7 |  28.6% |
+|app/models/sales_sku.rb                             |    87 |    65 |  53.8% |
+|app/models/scheduled_email.rb                       |    83 |    69 |  66.7% |
+|app/models/scms_version.rb                          |    64 |    51 |  29.4% |
+|app/models/security.rb                              |    46 |    26 | 100.0% |
+|app/models/server_instance.rb                       |   433 |   324 |  35.2% |
+|app/models/ship_method.rb                           |   187 |   129 |  78.3% |
+|app/models/ship_rate.rb                             |    53 |    41 |  61.0% |
+|app/models/ship_type.rb                             |    86 |    70 |  31.4% |
+|app/models/ship_zone.rb                             |    28 |    22 | 100.0% |
+|app/models/sizing_chart.rb                          |   140 |   111 |  36.0% |
+|app/models/sizing_chart_row.rb                      |    67 |    50 |  28.0% |
+|app/models/sku.rb                                   |   667 |   521 |  52.6% |
+|app/models/sku_deactivation.rb                      |    34 |    25 |  72.0% |
+|app/models/skus_quantity_available.rb               |     7 |     4 | 100.0% |
+|app/models/skus_quantity_warehouse.rb               |     7 |     4 | 100.0% |
+|app/models/subsite.rb                               |   437 |   343 |  67.6% |
+|app/models/subsite_user.rb                          |    21 |    16 |  87.5% |
+|app/models/tax_rate.rb                              |    95 |    69 |  52.2% |
+|app/models/tech.rb                                  |   152 |   128 |  43.8% |
+|app/models/tech_test_request.rb                     |    94 |    75 |  20.0% |
+|app/models/time_zone.rb                             |    19 |    11 | 100.0% |
+|app/models/transfer_order.rb                        |   398 |   313 |  61.7% |
+|app/models/transfer_order_item.rb                   |    55 |    45 |  93.3% |
+|app/models/unit.rb                                  |   185 |   136 |  77.2% |
+|app/models/unit_change.rb                           |   159 |   140 |   9.3% |
+|app/models/unit_change_source.rb                    |   107 |    97 |  53.6% |
+|app/models/unit_cost_change_request.rb              |   177 |   144 |  95.8% |
+|app/models/unit_disposition.rb                      |    39 |    32 |  43.8% |
+|app/models/units_table_lock.rb                      |    95 |    85 |  87.1% |
+|app/models/us_postal_code.rb                        |   116 |    93 |  28.0% |
+|app/models/user.rb                                  |   904 |   702 |  75.4% |
+|app/models/user_data_set.rb                         |   555 |   439 |  56.0% |
+|app/models/user_data_set_dynamic_column.rb          |    13 |    11 |  81.8% |
+|app/models/user_data_set_extract.rb                 |   137 |   108 |  64.8% |
+|app/models/user_data_set_extract_data_set.rb        |    41 |    31 |  87.1% |
+|app/models/user_list_map.rb                         |   154 |   123 |  46.3% |
+|app/models/user_order_stat.rb                       |    79 |    67 |  80.6% |
+|app/models/user_password_token.rb                   |    37 |    26 |  38.5% |
+|app/models/user_pending.rb                          |   203 |   165 |  66.7% |
+|app/models/user_segment.rb                          |     7 |     5 | 100.0% |
+|app/models/user_sync.rb                             |   181 |   125 |  14.4% |
+|app/models/vendor.rb                                |    81 |    60 |  41.7% |
+|app/models/voided_payment.rb                        |    34 |    31 |  93.5% |
+|app/models/wait_list_item.rb                        |   176 |   145 |  33.8% |
+|app/models/wait_list_item_queue.rb                  |    30 |    25 |  48.0% |
+|app/models/warehouse/building.rb                    |    52 |    40 |  67.5% |
+|app/models/warehouse/global_change_log_entry.rb     |   190 |   155 |   9.7% |
+|app/models/warehouse/handheld_file.rb               |   406 |   331 |  50.2% |
+|app/models/warehouse/handheld_file_unit.rb          |    14 |    11 | 100.0% |
+|app/models/warehouse/handheld_sku.rb                |   102 |    84 |  73.8% |
+|app/models/warehouse/location.rb                    |   142 |   114 |  63.2% |
+|app/models/warehouse/packing_list.rb                |   299 |   244 |  64.3% |
+|app/models/warehouse/packing_list_carton.rb         |    33 |    27 |  29.6% |
+|app/models/warehouse/packing_list_sku.rb            |   108 |    89 |  34.8% |
+|app/models/warehouse/packing_list_update.rb         |    14 |     9 |  55.6% |
+|app/models/warehouse/physical_inventory.rb          |   409 |   342 |  72.8% |
+|app/models/warehouse/physical_inventory_sku.rb      |   260 |   229 |  89.1% |
+|...dels/warehouse/physical_inventory_unit_change.rb |    13 |    10 | 100.0% |
+|app/models/warehouse/quiet_logistics.rb             |    89 |    78 |  93.6% |
+|app/models/warehouse/quiet_logistics/incoming.rb    |   192 |   146 |  92.5% |
+|...odels/warehouse/quiet_logistics/inventory_txn.rb |   342 |   282 |  82.3% |
+|app/models/warehouse/quiet_logistics/outgoing.rb    |   139 |   123 |  92.7% |
+|app/models/warehouse/quiet_logistics/po_receipt.rb  |    20 |    16 | 100.0% |
+|app/models/warehouse/quiet_logistics/serializer.rb  |   193 |   182 |  87.9% |
+|app/models/warehouse/shipping.rb                    |   354 |   108 |  26.9% |
+|app/models/warehouse/sku_update.rb                  |    10 |     6 | 100.0% |
+|app/models/warehouse/update_base.rb                 |    52 |    45 |  93.3% |
+|lib/active_record_perma_cache.rb                    |    65 |    36 | 100.0% |
+|lib/active_record_validation.rb                     |    23 |    14 |  50.0% |
+|lib/archive_file/util.rb                            |   109 |    80 |  28.7% |
+|lib/asset_util.rb                                   |   255 |   185 |  61.1% |
+|lib/attribute_sort.rb                               |   130 |   100 |  90.0% |
+|lib/authorization.rb                                |   137 |   114 |  44.7% |
+|lib/background_processing.rb                        |   125 |    94 |  30.9% |
+|lib/blackbird/queue_consumer.rb                     |   189 |   142 |  62.7% |
+|lib/blackbird/wait_list.rb                          |    55 |    35 |  68.6% |
+|lib/bundler.rb                                      |   351 |   289 |  47.1% |
+|lib/cache/abstract_page.rb                          |    47 |    33 | 100.0% |
+|lib/cache/abstract_singleton_cache.rb               |    67 |    39 |  64.1% |
+|lib/cache/chainable_cache.rb                        |   205 |   137 |  76.6% |
+|lib/cache/control_client.rb                         |   207 |   117 |  47.9% |
+|lib/cache/gilt_cache.rb                             |   111 |    77 |  79.2% |
+|lib/cache/global_cache.rb                           |    11 |     7 |  57.1% |
+|lib/cache/holder.rb                                 |    53 |    44 |  54.5% |
+|lib/cache/http_page.rb                              |    10 |     8 | 100.0% |
+|lib/cache/image_button_cache.rb                     |    12 |     7 | 100.0% |
+|lib/cache/image_cache.rb                            |    83 |    60 |  86.7% |
+|lib/cache/local_cache.rb                            |    17 |    11 | 100.0% |
+|lib/cache/multicast_cache.rb                        |   258 |   153 |  68.0% |
+|lib/cache/multicast_client.rb                       |   114 |    65 |  92.3% |
+|lib/cache/multicast_model.rb                        |   345 |   204 |  93.1% |
+|lib/cache/page_cache.rb                             |    19 |    15 | 100.0% |
+|lib/cache/sale_cache.rb                             |    19 |    15 | 100.0% |
+|lib/cache/session_cache.rb                          |    13 |     8 | 100.0% |
+|lib/cache/static_file.rb                            |   240 |   160 |  64.4% |
+|lib/cache/static_file_writer.rb                     |   294 |   238 |  54.2% |
+|lib/company_info.rb                                 |    23 |    17 |  88.2% |
+|lib/credit_card_helper.rb                           |    10 |     7 |  28.6% |
+|lib/csv.rb                                          |   361 |   281 |  69.8% |
+|lib/dw/queue.rb                                     |   218 |   146 |  35.6% |
+|lib/ean.rb                                          |    46 |    38 |  92.1% |
+|lib/edi/advance_ship_notification.rb                |   116 |    99 |  15.2% |
+|lib/email_util.rb                                   |   108 |    73 |  74.0% |
+|lib/esp/gilt/bounce.rb                              |   150 |   122 |  40.2% |
+|lib/esp/gilt/mailer.rb                              |   309 |   221 |  21.3% |
+|lib/esp/silverpop/api.rb                            |   147 |   104 |  37.5% |
+|lib/esp/silverpop/email_blocking.rb                 |    62 |    46 |  93.5% |
+|lib/feature.rb                                      |   399 |   298 |  57.7% |
+|lib/file_poll.rb                                    |    49 |    40 | 100.0% |
+|lib/file_util.rb                                    |   196 |   138 |  36.2% |
+|lib/gender.rb                                       |    62 |    49 |  69.4% |
+|lib/gilt_authorize_net_gateway.rb                   |    25 |    19 | 100.0% |
+|lib/gilt_flash.rb                                   |    57 |    47 |  53.2% |
+|lib/giltjob/job.rb                                  |   154 |   121 |  57.9% |
+|lib/giltjob/scheduler.rb                            |   216 |   169 |  61.5% |
+|lib/google.rb                                       |    41 |    30 |  63.3% |
+|lib/highbit.rb                                      |   291 |   195 |  10.8% |
+|lib/host_based_routing.rb                           |    52 |    37 |  70.3% |
+|lib/image_path_cache.rb                             |    22 |    15 |  73.3% |
+|lib/inventory_service/common.rb                     |   103 |    84 |  57.1% |
+|lib/inventory_service/instance.rb                   |   251 |   189 |  39.2% |
+|lib/inventory_service/local_instance.rb             |   240 |   198 |  82.3% |
+|lib/inventory_service/local_instance_data.rb        |    20 |    15 | 100.0% |
+|lib/inventory_service/sync.rb                       |   161 |   120 |  72.5% |
+|lib/key_blocking.rb                                 |    60 |    46 |  56.5% |
+|lib/mime_type.rb                                    |    36 |    29 |  89.7% |
+|lib/order_authorizer.rb                             |   183 |   127 |  96.9% |
+|lib/order_common.rb                                 |    68 |    51 |  45.1% |
+|lib/order_item_exchange.rb                          |    96 |    84 |  95.2% |
+|lib/origin.rb                                       |     6 |     4 | 100.0% |
+|lib/out_of_stock_exception.rb                       |    25 |    20 |  65.0% |
+|lib/payment_gateway_error.rb                        |   163 |   119 |  96.6% |
+|lib/perma_cache.rb                                  |    40 |    33 | 100.0% |
+|lib/process_status.rb                               |    25 |    21 |  57.1% |
+|lib/sales_tax.rb                                    |   100 |    85 |  44.7% |
+|lib/schema.rb                                       |    67 |    54 |  96.3% |
+|lib/scms.rb                                         |    41 |    33 |  72.7% |
+|lib/shared/birthdate.rb                             |    31 |    25 |  64.0% |
+|lib/shared/cart_service/cart.rb                     |    34 |    26 |  92.3% |
+|lib/shared/cart_service/cart_data.rb                |    43 |    32 | 100.0% |
+|lib/shared/cart_service/common.rb                   |    34 |    25 |  40.0% |
+|lib/shared/cart_service/local_cart.rb               |   316 |   259 |  77.2% |
+|lib/shared/cookie_jar.rb                            |   190 |   128 |  75.0% |
+|lib/shared/file_data_store.rb                       |    54 |    43 | 100.0% |
+|lib/shared/json_util.rb                             |    23 |    20 |  35.0% |
+|lib/shared/lru_cache.rb                             |   222 |   139 |  84.2% |
+|lib/shared/password_timestamp.rb                    |    29 |    16 | 100.0% |
+|lib/shared/security.rb                              |   131 |    80 |  52.5% |
+|lib/shared/user_cookies.rb                          |   122 |    80 |  87.5% |
+|lib/shared/yaml_util.rb                             |    61 |    41 |  78.0% |
+|lib/split_order.rb                                  |   208 |   173 |  93.1% |
+|lib/sql_filter.rb                                   |   328 |   240 |  55.0% |
+|lib/sql_query.rb                                    |   176 |   142 |  72.5% |
+|lib/static_variable.rb                              |    40 |    28 | 100.0% |
+|lib/status.rb                                       |   122 |    78 |  87.2% |
+|lib/subsitable.rb                                   |    55 |    32 |  96.9% |
+|lib/subsites.rb                                     |    33 |    25 |  72.0% |
+|lib/track_log_processor.rb                          |   358 |   242 |  23.6% |
+|lib/tracking.rb                                     |     5 |     4 | 100.0% |
+|lib/tracking/omniture.rb                            |   184 |   149 |  30.2% |
+|lib/tracking/razorfish.rb                           |    40 |    30 |  83.3% |
+|lib/unique_constraint_violation.rb                  |    33 |    17 | 100.0% |
+|lib/upc.rb                                          |    62 |    37 |  78.4% |
+|lib/ups.rb                                          |    40 |    30 |  46.7% |
+|lib/ups/shipment.rb                                 |   394 |   321 |  19.6% |
+|lib/ups/tracking.rb                                 |    50 |    38 |  23.7% |
+|lib/user_registration.rb                            |   140 |   110 |  70.9% |
+|lib/util.rb                                         |  1179 |   887 |  55.9% |
+|lib/util/database.rb                                |    31 |    21 |  76.2% |
+|lib/util/http.rb                                    |   100 |    78 |  15.4% |
+|lib/util/xml.rb                                     |    26 |    20 |  20.0% |
+|lib/uuid.rb                                         |   402 |   186 |  47.3% |
+|lib/validation.rb                                   |   104 |    73 |  63.0% |
+|lib/wmsgun/util.rb                                  |   661 |   513 |  36.5% |
+|lib/zeus/cache_key.rb                               |   137 |    99 |  91.9% |
+|lib/zeus/common.rb                                  |    37 |    28 |  42.9% |
++----------------------------------------------------+-------+-------+--------+
+|Total                                               | 53604 | 41136 |  50.3% |
++----------------------------------------------------+-------+-------+--------+
+50.3%   315 file(s)   53604 Lines   41136 LOC
+rake aborted!
+Command /opt/local/bin/ruby18 -I"/opt/local/lib/ruby/gems/1.8/gems/rspec-1.2.6/lib" -S rcov --exclude spec,/usr/lib/ruby --rails --text-report -o "/home/web/.cruise/projects/gilt/build-be77c5e03641a9433faa7190a78aee145935ccc4/coverage" "/opt/local/lib/ruby/gems/1.8/gems/rspec-1.2.6/bin/spec" -- "spec/helpers/sale_helper_spec.rb" "spec/helpers/omniture_helper_spec.rb" "spec/controllers/tech_controller_spec.rb" "spec/controllers/support_controller_spec.rb" "spec/controllers/home_controller_spec.rb" "spec/controllers/checkout_controller_spec.rb" "spec/controllers/admin/unit_cost_change_requests_controller_spec.rb" "spec/controllers/admin/discrepancy_controller_spec.rb" "spec/controllers/admin/packing_list_controller_spec.rb" "spec/controllers/admin/payment_controller_spec.rb" "spec/controllers/admin/return_controller_spec.rb" "spec/controllers/admin/merchant_transaction_controller_spec.rb" "spec/controllers/admin/finance_controller_spec.rb" "spec/controllers/admin/unit_controller_spec.rb" "spec/controllers/admin/sale_controller_spec.rb" "spec/controllers/application_controller_spec.rb" "spec/controllers/account_controller_spec.rb" "spec/controllers/quiet_logistics_controller_spec.rb" "spec/controllers/wait_list_controller_spec.rb" "spec/controllers/sale_controller_spec.rb" "spec/lib/data_helpers_spec.rb" "spec/lib/static_file_writer_spec.rb" "spec/lib/order_authorizer_spec.rb" "spec/lib/attribute_sort_spec.rb" "spec/lib/gender_spec.rb" "spec/lib/split_order_spec.rb" "spec/lib/wmsgun/util_spec.rb" "spec/lib/authorization_spec.rb" "spec/lib/math_spec.rb" "spec/lib/util_spec.rb" "spec/lib/scms_spec.rb" "spec/lib/zeus_cache_key_spec.rb" "spec/lib/inventory_service/sync_spec.rb" "spec/lib/inventory_service/local_instance_spec.rb" "spec/lib/static_file_spec.rb" "spec/lib/sql_filter_spec.rb" "spec/lib/shared/cart_service/cart_data_spec.rb" "spec/lib/shared/cart_service/local_cart_spec.rb" "spec/lib/shared/cookie_jar_spec.rb" "spec/lib/validation_spec.rb" "spec/lib/feature_spec.rb" "spec/lib/password_timestamp_spec.rb" "spec/lib/gilt_authorize_net_gateway_spec.rb" "spec/lib/gilt_spec/paymentech_transaction_import_spec_spec.rb" "spec/models/order_item_spec.rb" "spec/models/merchant_transaction_spec.rb" "spec/models/credit_card_spec.rb" "spec/models/sale_spec.rb" "spec/models/us_postal_code_spec.rb" "spec/models/drop_ship_unit_spec.rb" "spec/models/email_message_spec.rb" "spec/models/blog/blog_post_spec.rb" "spec/models/product_spec.rb" "spec/models/payment_spec.rb" "spec/models/external_site_promotion_spec.rb" "spec/models/payment_transaction_discrepancy_spec.rb" "spec/models/rma_spec.rb" "spec/models/order_processor_spec.rb" "spec/models/inter_warehouse_order_spec.rb" "spec/models/membership_request_spec.rb" "spec/models/subsite_user_spec.rb" "spec/models/unit_spec.rb" "spec/models/customer_data_spec.rb" "spec/models/sku_spec.rb" "spec/models/wait_list_item_queue_spec.rb" "spec/models/two_order_spec.rb" "spec/models/merchant_transaction_batch_spec.rb" "spec/models/factories_spec.rb" "spec/models/product_look_spec.rb" "spec/models/voided_payment_spec.rb" "spec/models/scheduled_email_spec.rb" "spec/models/user_list_map_spec.rb" "spec/models/mock_gateway_spec.rb" "spec/models/promotion_response_spec.rb" "spec/models/category_spec.rb" "spec/models/user_spec.rb" "spec/models/group_member_spec.rb" "spec/models/wait_list_item_spec.rb" "spec/models/purchase_order_spec.rb" "spec/models/unit_cost_change_request_spec.rb" "spec/models/group_spec.rb" "spec/models/transfer_order_spec.rb" "spec/models/mobile_carrier_spec.rb" "spec/models/subsite_spec.rb" "spec/models/merchant_bank_spec.rb" "spec/models/scms_version_spec.rb" "spec/models/address_spec.rb" "spec/models/combined_order_spec.rb" "spec/models/customer_unit_spec.rb" "spec/models/sample_rtv_spec.rb" "spec/models/report/unit_cost_adjustment_spec.rb" "spec/models/gl/query_spec.rb" "spec/models/user_pending_spec.rb" "spec/models/unit_change_spec.rb" "spec/models/warehouse/handheld_file_spec.rb" "spec/models/warehouse/quiet_logistics/inventory_txn_spec.rb" "spec/models/warehouse/quiet_logistics/incoming_spec.rb" "spec/models/warehouse/quiet_logistics/po_receipt_spec.rb" "spec/models/warehouse/quiet_logistics/serializer_spec.rb" "spec/models/warehouse/quiet_logistics/outgoing_spec.rb" "spec/models/warehouse/handheld_sku_spec.rb" "spec/models/warehouse/quiet_logistics_spec.rb" "spec/models/warehouse/packing_list_update_spec.rb" "spec/models/warehouse/packing_list_spec.rb" "spec/models/warehouse/physical_inventory_spec.rb" "spec/models/warehouse/sku_update_spec.rb" "spec/models/image_spec.rb" "spec/models/email_bounce_spec.rb" "spec/models/order_item_exchange_spec.rb" "spec/models/user_segment_spec.rb" "spec/models/ean_spec.rb" "spec/models/discount_spec.rb" "spec/models/notifier_spec.rb" "spec/models/brand_spec.rb" "spec/models/email_util_spec.rb" "spec/models/email_mailing_stat_spec.rb" "spec/models/dollar_off_discount_spec.rb" "spec/models/user_order_stat_spec.rb" "spec/models/discount_offer_spec.rb" "spec/models/order_spec.rb" "spec/models/units_table_lock_spec.rb" "spec/views/ship_rates_rjs_spec.rb" --format html:/home/web/.cruise/projects/gilt/build-be77c5e03641a9433faa7190a78aee145935ccc4/rspec_code_examples.html --format profile failed
+
+(See full trace by running task with --trace)
+
+dir : /home/web/.cruise/projects/gilt/work
+command : echo /home/web/.cruise/projects/gilt/work $ bin/build_test_app.sh >> /home/web/.cruise/projects/gilt/build-be77c5e03641a9433faa7190a78aee145935ccc4/build.log && bin/build_test_app.sh >> /home/web/.cruise/projects/gilt/build-be77c5e03641a9433faa7190a78aee145935ccc4/build.log 2>&1
+exitstatus: 1

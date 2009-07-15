@@ -1,6 +1,15 @@
 # BuildMailer is an ActionMailer class that understands how to send build status reports.
 class BuildMailer < ActionMailer::Base
 
+  def blame_report(build, recipients, sent_at = Time.now)
+    @subject    = "[CC]#{subject}"
+    @body       = { :build => build }
+    @recipients = recipients
+    @from       = from
+    @sent_on    = sent_at
+    @headers    = {}
+  end
+
   def build_report(build, recipients, from, subject, message, sent_at = Time.now)
     @subject    = "[CC]#{subject}"
     @body       = {

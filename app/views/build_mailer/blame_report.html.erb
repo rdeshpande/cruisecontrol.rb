@@ -1,0 +1,10 @@
+<% if Configuration.dashboard_url -%>
+
+  You (or one of your peers) broke the build as of this last checkin: <%= @build.label -%>
+
+  Please fix immediately.
+
+  <%= @build.url %>
+<% else -%>
+  Note: if you set Configuration.dashboard_url in config/site_config.rb, you'd see a link to the build page here.
+<% end -%>

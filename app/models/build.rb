@@ -2,7 +2,7 @@
 # typically associated with a CI build, such as revision, status, and changeset.
 class Build
   include CommandLine
-  
+
   class ConfigError < StandardError; end
 
   attr_reader :project, :label
@@ -17,6 +17,10 @@ class Build
     BuildStatus.new(artifacts_directory)
   end
 
+  def changeset_emails
+    changeset.scan(/committed by .*?\<(.*)?\>/).flatten.uniq
+  end
+
   def latest?
     label == project.last_build.label
   end
@@ -24,7 +28,7 @@ class Build
   def fail!(error = nil)
     build_status.fail!(seconds_since(@start), error)
   end
-  
+
   def run
     build_log = artifact 'build.log'
     File.open(artifact('cruise_config.rb'), 'w') {|f| f << @project.config_file_content }
@@ -59,13 +63,13 @@ EOF
       end
     end
   end
-  
+
   def brief_error
     return error unless error.blank?
     return "plugin error" unless plugin_errors.empty?
     nil
   end
-  
+
   def destroy
     FileUtils.rm_rf artifacts_directory
   end
@@ -74,7 +78,7 @@ EOF
   def additional_artifacts
     Dir.entries(artifacts_directory).find_all {|artifact| !(artifact =~ IGNORE_ARTIFACTS) }
   end
-  
+
   def status
     build_status.to_s
   end
@@ -94,7 +98,7 @@ EOF
   def revision
     label.split(".")[0]
   end
-  
+
   def changeset
     @changeset ||= contents_for_display(artifact('changeset.log'))
   end
@@ -102,7 +106,7 @@ EOF
   def output
     @output ||= contents_for_display(artifact('build.log'))
   end
-  
+
   def project_settings
     @project_settings ||= contents_for_display(artifact('cruise_config.rb'))
   end
@@ -111,8 +115,20 @@ EOF
     @project_settings ||= contents_for_display(build_status.error_message_file)
   end
 
+  def current_errors
+    output.scan(/^\d+\)\n(.+?)\n\n/m).flatten
+  end
+
   def plugin_errors
     @plugin_errors ||= contents_for_display(artifact('plugin_errors.log'))
+  end
+
+  def has_new_errors?
+    !new_errors.empty?
+  end
+
+  def new_errors
+    current_errors - @project.previous_build(self).current_errors
   end
 
   def time
@@ -127,18 +143,18 @@ EOF
     end
     @artifacts_directory
   end
-  
+
   def clear_cache
     FileUtils.rm_f "#{RAILS_ROOT}/public/builds/older/#{@project.name}.html"
   end
-  
+
   def url
     dashboard_url = Configuration.dashboard_url
     raise "Configuration.dashboard_url is not specified" if dashboard_url.nil? || dashboard_url.empty?
     dashboard_url + ActionController::Routing::Routes.generate(
         :controller => 'builds', :action => 'show', :project => project, :build => to_param)
   end
-  
+
   def artifact(file_name)
     File.join(artifacts_directory, file_name)
   end
@@ -158,16 +174,16 @@ EOF
   def command
     project.build_command or rake
   end
-  
+
   def rake_task
     project.rake_task
   end
-  
+
   def rake
     # Simply calling rake is this convoluted due to idiosyncrazies of Windows, Debian and JRuby. :(
     # ABSOLUTE_RAILS_ROOT is set in config/envirolnment.rb, and is necessary because
     # in_clean_environment__with_local_copy() changes current working directory. Replacing it with RAILS_ROOT doesn't
-    # fail any tests, because in test environment (unlike production) RAILS_ROOT is already absolute. 
+    # fail any tests, because in test environment (unlike production) RAILS_ROOT is already absolute.
     # --nosearch flag here prevents CC.rb from building itself when a project has no Rakefile
     # ARGV.clear at the end prevents Test::Unit's AutoRunner from doing anything silly, like trying to require 'cc:rb'
     # Some people saw it happening.
@@ -196,7 +212,7 @@ EOF
   def to_param
     self.label
   end
-  
+
   def elapsed_time
     build_status.elapsed_time
   end
