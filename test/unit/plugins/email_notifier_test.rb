@@ -2,7 +2,7 @@ require File.expand_path(File.dirname(__FILE__) + '/../../test_helper')
 
 class EmailNotifierTest < Test::Unit::TestCase
   include FileSandbox
-  
+
   BUILD_LOG = <<-EOL
     blah blah blah
     something built
@@ -22,10 +22,10 @@ class EmailNotifierTest < Test::Unit::TestCase
     @notifier = EmailNotifier.new
     @notifier.emails = ["jeremystellsmith@gmail.com", "jeremy@thoughtworks.com"]
     @notifier.from = 'cruisecontrol@thoughtworks.com'
-    
+
     @project.add_plugin(@notifier)
   end
-  
+
   def teardown
     teardown_sandbox
   end
@@ -41,7 +41,7 @@ class EmailNotifierTest < Test::Unit::TestCase
     mail = ActionMailer::Base.deliveries[0]
 
     assert_equal @notifier.emails, mail.to
-    assert_equal "[CruiseControl] myproj build 5 failed", mail.subject
+    assert_equal "[CC][myproj] FAILED: 5", mail.subject
   end
 
   def test_send_email_with_fixed_build
@@ -53,9 +53,9 @@ class EmailNotifierTest < Test::Unit::TestCase
     mail = ActionMailer::Base.deliveries[0]
 
     assert_equal @notifier.emails, mail.to
-    assert_equal "[CruiseControl] myproj build 5 fixed", mail.subject
+    assert_equal "[CC][myproj] FIXED: 5", mail.subject
   end
-  
+
   def test_logging_on_send
     CruiseControl::Log.expects(:event).with("Sent e-mail to 4 people", :debug)
     BuildMailer.expects(:deliver_build_report)
@@ -72,15 +72,15 @@ class EmailNotifierTest < Test::Unit::TestCase
     @notifier.emails = []
     @notifier.build_finished(failing_build)
   end
-  
+
   def test_useful_errors
     ActionMailer::Base.stubs(:smtp_settings).returns(:foo => 5)
     CruiseControl::Log.expects(:event).with("Error sending e-mail - current server settings are :\n  :foo = 5", :error)
     BuildMailer.expects(:deliver_build_report).raises('something')
-    
+
     @notifier.emails = ['foo@crapty.com']
 
-    # FIXME: how does this 'something' match? Something must be wrong with assert_raises 
+    # FIXME: how does this 'something' match? Something must be wrong with assert_raises
     assert_raises('something') { @notifier.build_finished(failing_build) }
   end
 
@@ -88,9 +88,9 @@ class EmailNotifierTest < Test::Unit::TestCase
     Configuration.expects(:email_from).returns('central@foo.com')
     @notifier.from = nil
     build = failing_build()
-    
+
     BuildMailer.expects(:deliver_build_report).with(build, ['jeremystellsmith@gmail.com', 'jeremy@thoughtworks.com'],
-                        'central@foo.com', 'myproj build 5 failed', 'The build failed.')
+                        'central@foo.com', '[myproj] FAILED: 5', 'The build failed.')
 
     @notifier.build_finished(failing_build)
   end
@@ -99,7 +99,7 @@ class EmailNotifierTest < Test::Unit::TestCase
     Configuration.stubs(:dashboard_url).returns("http://www.my.com")
     @notifier.emails = ['foo@happy.com']
     @notifier.build_finished(failing_build)
-    
+
     mail = ActionMailer::Base.deliveries[0]
     assert_match /http:\/\/www.my.com\/builds\/myproj\/5/, mail.body
   end
@@ -114,7 +114,7 @@ class EmailNotifierTest < Test::Unit::TestCase
   end
 
   private
-  
+
   def failing_build
     @build.stubs(:failed?).returns(true)
     @build.stubs(:output).returns(BUILD_LOG)

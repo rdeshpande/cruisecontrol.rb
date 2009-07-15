@@ -1,31 +1,26 @@
 <% if Configuration.dashboard_url -%>
-<%= @message %>
+  <%= @message %>
 
-CHANGES
--------
-<%= @build.changeset %>
+  CHANGES
+  -------
+  <%= @build.changeset %>
 
-<% unless @failures_and_errors.empty? -%>
-TEST FAILURES AND ERRORS
------------------------
-<%= @failures_and_errors %>
+  <% unless @failures_and_errors.empty? -%>
+    TEST FAILURES AND ERRORS
+    -----------------------
+    <%= @failures_and_errors %>
 
-<% end -%>
-See <%= "#{@build.url}" %> for details.
+  <% end -%>
+
+  BUILD LOG
+  ---------
+  <%= @build.output %>
+
+  PROJECT SETTINGS
+  ----------------
+  <%= @build.project_settings %>
+
+  See <%= "#{@build.url}" %> for more details.
 <% else -%>
-<%= @message %>
-
   Note: if you set Configuration.dashboard_url in config/site_config.rb, you'd see a link to the build page here.
-
-CHANGES
--------
-<%= @build.changeset %>
-
-BUILD LOG
----------
-<%= @build.output %>
-
-PROJECT SETTINGS
-----------------
-<%= @build.project_settings %>
 <% end -%>

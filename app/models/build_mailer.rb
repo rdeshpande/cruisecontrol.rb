@@ -2,7 +2,7 @@
 class BuildMailer < ActionMailer::Base
 
   def build_report(build, recipients, from, subject, message, sent_at = Time.now)
-    @subject    = "[CruiseControl] #{subject}"
+    @subject    = "[CC]#{subject}"
     @body       = {
         :build => build,
         :message => message,
