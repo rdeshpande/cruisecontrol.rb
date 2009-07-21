@@ -9,7 +9,8 @@ class BlameNotifier < BuilderPlugin
   def build_finished(build)
     if build.failed? and build.has_new_errors?
       build.changeset_emails.each do |email_address|
-        email :deliver_blame_report, build, email_address
+        # NOTE: disabled
+        # email :deliver_blame_report, build, email_address
       end
     end
   end
