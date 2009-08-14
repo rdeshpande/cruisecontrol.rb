@@ -119,6 +119,7 @@ a.never_built, a.never_built:visited {
   width: 47%;
   float: left;
   border: 1px solid;
+  border-color: #C6C3B5;
 }  
 
 .build_success, .build_never_built, .build_incomplete, .build_failed {
