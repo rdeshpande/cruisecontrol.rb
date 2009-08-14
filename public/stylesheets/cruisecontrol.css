@@ -136,7 +136,7 @@ a.never_built, a.never_built:visited {
 }
 
 .build_failed {
-  background-color: url(../images/red_gradient.png);
+  background-image: url(../images/red_gradient.png);
 }
 
 .project table.project_pane {
