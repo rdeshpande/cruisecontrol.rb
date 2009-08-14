@@ -113,15 +113,17 @@ a.never_built, a.never_built:visited {
 /* Project dashboard */
 
 .project {
-  margin: 0.5em 0;
+  margin: 0.2em 0;
   padding: 0 1.5em;
   min-height: 9.2em;
+  width: 47%;
+  float: left;
+  border: 1px solid;
 }  
 
 .build_success, .build_never_built, .build_incomplete, .build_failed {
   background-position: bottom;
   background-repeat: repeat-x;
-  margin-left: -2.5em;
 }
 
 .build_never_built, .build_incomplete {
@@ -133,7 +135,7 @@ a.never_built, a.never_built:visited {
 }
 
 .build_failed {
-  background-image: url(../images/red_gradient.png);
+  background-color: url(../images/red_gradient.png);
 }
 
 .project table.project_pane {
@@ -147,7 +149,7 @@ a.never_built, a.never_built:visited {
 }
 
 .project table.project_pane td.project_summary {
-  width: 24%;
+  width: 44%;
 }
 
 .project table.project_pane td.builder_control {
